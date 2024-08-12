@@ -14,9 +14,9 @@ body {
     height: 4rem;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.63) 0%, rgba(191, 101, 101, 0.26) 35%, rgba(42, 6, 108, 0.5) 100%);
     border-bottom: 1px solid #ebcfcf;
-    display: flex;
-    justify-content: center;
     border-radius: 0 0 20px 20px;
+    width: 100vw;
+    text-align: center;
 }
 
 /* Styling for the heading text within the header */
@@ -34,7 +34,7 @@ body {
 .totalContainer {
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: fit-content;
     margin: 5rem auto;
     text-align: center;
     background: linear-gradient(90deg, #151313a1 0%, #0b2134 22%, #39033996 70%, #59363c92 100%);
@@ -49,6 +49,7 @@ body {
     font-size: 15px;
     color: wheat;
     margin-bottom: 25px;
+    width: 34rem;
 }
 
 /* Styling for the date input element */
