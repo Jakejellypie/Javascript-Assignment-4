@@ -48,9 +48,8 @@ body {
 .searchPrompt {
     font-size: 15px;
     color: wheat;
-    margin-bottom: 25px;
+    margin: 2rem auto;
     width: 34rem;
-    align-self: center;
 }
 
 /* Styling for the date input element */
