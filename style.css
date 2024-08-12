@@ -50,6 +50,7 @@ body {
     color: wheat;
     margin-bottom: 25px;
     width: 34rem;
+    align-self: center;
 }
 
 /* Styling for the date input element */
@@ -161,4 +162,11 @@ body {
 /* Styling for list items in the jokes section */
 .jokeLiClass {
     margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  searchPrompt {
+    width: 20rem;
+  }
 }
