@@ -1,0 +1,163 @@
+/* Set the background image for the entire HTML document and use monospace font */
+html {
+    background-image: url(images/starry-background.jpg);
+    font-family: monospace;
+}
+
+/* Remove default margin for the body element */
+body {
+    margin: 0;
+}
+
+/* Style for the header section with gradient background and border */
+.header {
+    height: 4rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63) 0%, rgba(191, 101, 101, 0.26) 35%, rgba(42, 6, 108, 0.5) 100%);
+    border-bottom: 1px solid #ebcfcf;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Styling for the heading text within the header */
+.heading_Text {
+    margin: 0;
+    align-self: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+/* Container for the main content with a background gradient and padding */
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: 5rem auto;
+    text-align: center;
+    background: linear-gradient(90deg, #151313a1 0%, #0b2134 22%, #39033996 70%, #59363c92 100%);
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 1px inset antiquewhite;
+    height: fit-content;
+}
+
+/* Prompt text styling for the search area */
+.searchPrompt {
+    font-size: 15px;
+    color: wheat;
+    margin-bottom: 25px;
+}
+
+/* Styling for the date input element */
+.dateBar {
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 6px;
+}
+
+/* Styling for the search button */
+.searchButton {
+    width: fit-content;
+    padding: 6px 12px;
+    margin: 30px auto;
+    color: #3c003c;
+}
+
+/* Change cursor to pointer on hover for buttons */
+.searchButton:hover, .imageButton:hover {
+    cursor: pointer;
+}
+
+/* Grid layout for displaying images */
+.imageContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Styling for individual image elements */
+.newImageEntry {
+    border: 1px solid white;
+    width: 240px;
+    height: 250px;
+    border-radius: 2rem;
+}
+
+/* Container for each image with button */
+.imageSet {
+    width: fit-content;
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for image buttons */
+.imageButton {
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+/* Modal container styling */
+.modalContent {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Inner content styling for the modal */
+.modalInner {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40rem;
+    border-radius: 10px;
+}
+
+/* Icon positioning within the modal */
+.chuckIcon {
+    transform: translateX(16rem);
+}
+
+/* Title styling within the modal */
+.modalSecondTitle {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: 2px wavy underline #000;
+    margin-bottom: 3rem;
+}
+
+/* Close button styling within the modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Close button hover and focus effects */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for list items in the jokes section */
+.jokeLiClass {
+    margin-bottom: 1rem;
+}

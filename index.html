@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Group Members - Vikramaaditya Mathur (200563277), Zayan Khan(200580933), Nicolas Smith (200530206) -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Assignment-4</title>
+    <!-- adding the appropriate links for both css and js-->
+    <link rel = "stylesheet" href = "style.css">
+    <script defer src = "script.js"></script>
+</head>
+<body>
+
+    <!-- Aiming to link Nasa's APOD API to make users see the 'Astronomy pic of the Day' using a date input field. -->
+    
+    <section class = "header">
+            <h1 class = "heading_Text">Nasa API app</h1>
+    </section>
+     <div class = "totalContainer">
+        <!-- Creating a date Input field-->
+        <h2 class = "searchPrompt">Enter a date to see it's 'Astronomy Picture of the Day (must be equal to or less than today's date).</h2>
+
+        <input type = "date" class = "dateBar" id = "dateBar" name = "dateBar" required>
+        <button class = "searchButton" for = "dateBar" >Search</button>
+        <!-- Creating a container that will hold all the images from the APOD API -->
+        <section class = "imageContainer"></section>
+     </div>
+
+     <!-- creating an audio tag for the button audio -->
+      <audio id = "chuckNorrisAudio">
+        <source src="/audio/A CHUCKA NORRIIIIIIIIIIIS.mp3" type="audio/mpeg">
+      </audio>
+
+      <!-- Creating a modal that will pop up whenever the user clicks on the button associated with a photo -->
+     <div id="imageModal" class="modalContent">
+        <div class="modalInner">
+            <!-- creating a 'x' close button using the multiplication symbol-->
+          <span class="close">&times;</span>
+          <img class = "chuckIcon" height = 90px width = 90px src = "images/chuckNorrisIcon.svg" alt = "an image of the majestic Chuck Norris">
+          <h3 class = "modalSecondTitle">For your efforts here are 3 Chuck Norris jokes.</h3>
+          <ul id = "jokeDomList" class = "modalDescription"></ul>
+        </div>
+      </div>
+    
+</body>
+</html>
